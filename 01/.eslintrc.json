@@ -1,0 +1,36 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended","plugin:react/recommended"],
+  "rules": {
+    "indent": [0, 2, {
+      "SwitchCase": 1,
+      "MemberExpression": "off",
+      "flatTernaryExpressions": true
+    }],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "no-console": 1,
+    "no-unreachable": 1,
+    "no-useless-escape": 0,
+    "no-unused-vars": ["warn", { "args": "none" }],
+    "require-await": "warn",
+    "react/prop-types": 0
+  }
+}
